@@ -118,32 +118,31 @@ img {
 
 
 .coins-tracker .coin {
-  opacity: 1;
   animation: coin-slide 15s linear infinite;
-
 }
+
+
 
 @keyframes coin-slide {
   0% {
-    transform: translateX(0px);
-  }
-  10% {
     transform: translateX(-100px);
   }
-  25% {
+   10% {
     transform: translateX(-200px);
   }
+  25% {
+    transform: translateX(-300px);
+  }
   50% {
-    transform: translateX(-400px);
+    transform: translateX(-500px);
   }
   75% {
-    transform: translateX(-600px);  
+    transform: translateX(-700px);   
   } 
   100% {
-    transform: translateX(-100px);
+    transform: translateX(-1000px);
   }
 }   
-
 
 
 
