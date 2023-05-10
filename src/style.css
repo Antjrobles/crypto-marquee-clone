@@ -5,8 +5,8 @@
 }
 html,
 body {
-  height: 100%;      /* fit the content to the screen */
-  overflow: hidden;       /* Avoid vertical scrolling */
+  height: 100%; /* fit the content to the screen */
+  overflow: hidden; /* Avoid vertical scrolling */
   background-color: rgb(10, 9, 9);
   font-family: prompt;
   font-size: 35px;
@@ -16,8 +16,8 @@ body {
   line-height: 70px;
 }
 header {
-user-select: none;  
-cursor: default;
+  user-select: none;
+  cursor: default;
 }
 h1 {
   color: #f07178;
@@ -36,7 +36,6 @@ h1 {
 }
 
 /* SLIDER */
-
 
 p {
   font-size: 15px;
@@ -57,28 +56,20 @@ img {
   height: 1rem;
 }
 
-.percentage{
+.percentage {
   color: rgb(238, 43, 111);
   margin-left: 8px;
 }
 
-.icons{
+.icons {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
 
-
-
 .spot {
   margin-left: 3px;
 }
-
-
-
-
-
-
 
 .coins-tracker {
   margin-top: 100px;
@@ -88,14 +79,12 @@ img {
   height: 60px;
   display: flex;
   overflow: hidden; /* Agregado para evitar que los elementos se salgan */
-
 }
 
 .coin {
   display: flex;
   height: 100%;
   flex-shrink: 0;
-
 }
 
 .coin:first-child {
@@ -106,28 +95,25 @@ img {
   margin-left: auto;
 }
 
-
 .coins {
   display: flex;
   list-style: none;
   flex: 1;
-
 }
 
-
-
-
-.coins-tracker .coin {
-  animation: coin-slide 15s linear infinite;
+.coin {
+  animation: coin-slide 30s linear infinite;
+  animation-fill-mode: forwards;
 }
+
 
 
 
 @keyframes coin-slide {
   0% {
-    transform: translateX(-100px);
+    transform: translateX(0px);
   }
-   10% {
+  /* 10% {
     transform: translateX(-200px);
   }
   25% {
@@ -137,12 +123,9 @@ img {
     transform: translateX(-500px);
   }
   75% {
-    transform: translateX(-700px);   
-  } 
+    transform: translateX(-700px);
+  } */
   100% {
     transform: translateX(-1000px);
   }
-}   
-
-
-
+} 
