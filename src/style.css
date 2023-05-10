@@ -106,9 +106,6 @@ img {
   animation-fill-mode: forwards;
 }
 
-
-
-
 @keyframes coin-slide {
   0% {
     transform: translateX(0px);
@@ -128,4 +125,4 @@ img {
   100% {
     transform: translateX(-1000px);
   }
-} 
+}
